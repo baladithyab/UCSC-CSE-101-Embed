@@ -1,33 +1,11 @@
-# UCSC CSE 101 — Algorithms (Winter 2020)
+# ⚠️ Archived — content merged into source repo
 
-Interactive visualizations of the data structures and algorithms from
-Patricia Lopez's CSE 101 at UCSC. Source artifacts are TypeScript
-ports of the original C++ assignments, instrumented with step-by-step
-animations so the algorithm is visible, not just runnable.
+This repo's contents (`nqueens.html`, `avl-wordrange.html`) have been merged into the original CSE 101 source repo:
 
-Embeds via codeseys.io's project-embed pipeline. See the manifest
-(`web.codeseys.json`) for asset metadata.
+→ **[baladithyab/UCSC-CSE-101-W20/embeds/](https://github.com/baladithyab/UCSC-CSE-101-W20/tree/master/embeds)**
 
-## Original source
+The `web.codeseys.json` manifest now lives at the source repo's root, and the build workflow runs from there. The personal-site discovery script picks it up via the `codeseys-embed` topic.
 
-C++ implementations of all four homeworks live at
-[baladithyab/UCSC-CSE-101-W20](https://github.com/baladithyab/UCSC-CSE-101-W20)
-(or wherever they're being served from in the future). This repo is
-the *visualization* layer — same algorithms, different presentation.
+Live demos: [codeseys.io/projects/cse-101](https://codeseys.io/projects/cse-101)
 
-## Assignments
-
-- **HW1 — Bard**: insert Shakespeare's vocabulary into a sorted linked
-  list, query for word frequencies. Original was a perf benchmark of
-  insertion-sort vs merge-sort on ~5K unique words.
-- **HW2 — N-Queens**: place N queens on an N×N board such that none
-  attack each other. Backtracking with constraint propagation.
-- **HW3 — Wordrange**: AVL tree of strings, query for words in a
-  lexicographic range. Self-balancing on insertion + deletion.
-- **HW4 — Six Degrees**: BFS shortest-path between actors in a
-  Hollywood collaboration graph. Original used a 50K-node co-star
-  network from IMDB scrapes; the demo uses a smaller fixture.
-
-## License
-
-MIT.
+This repo is kept read-only as historical reference. Do not push new commits.

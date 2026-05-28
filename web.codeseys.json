@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "slug": "cse-101",
+  "category": {
+    "kind": "college",
+    "school": "UCSC",
+    "code": "CSE 101",
+    "title": "Algorithms",
+    "year": 2020
+  },
+  "title": "CSE 101 — Algorithms (UCSC, Winter 2020)",
+  "description": "Interactive visualizations of the data structures and algorithms from Patricia Lopez's CSE 101. The original C++ implementations are CLI programs; here the same algorithms are rewritten in TypeScript with step-by-step animation so the algorithm itself is visible — backtracking, AVL rotations, BFS expansion.",
+  "tags": ["algorithms", "data-structures", "avl-tree", "backtracking", "bfs", "visualization"],
+  "completionLevel": "works",
+  "defaultAssetId": "nqueens",
+  "assets": [
+    {
+      "id": "nqueens",
+      "title": "HW2 — N-Queens Backtracker",
+      "group": "Demos",
+      "description": "Place N queens on an N×N board such that no two attack each other. Watch the backtracker place queens column-by-column, with each conflict detection and unwinding step animated.",
+      "embed": { "kind": "static-html", "entry": "nqueens.html" }
+    },
+    {
+      "id": "avl-wordrange",
+      "title": "HW3 — AVL Wordrange",
+      "group": "Demos",
+      "description": "Self-balancing BST of strings. Insert words and watch the tree rotate (LL/RR/LR/RL) to maintain balance. Range queries highlight every node lexicographically between two endpoints.",
+      "embed": { "kind": "static-html", "entry": "avl-wordrange.html" }
+    }
+  ],
+  "delivery": {
+    "mode": "runtime-r2",
+    "url": "https://assets-r2.codeseys.io/cse-101/pending/",
+    "version": "pending",
+    "sizeBytes": 0
+  },
+  "build": {
+    "ci": true,
+    "workflow": ".github/workflows/build-web-asset.yml"
+  }
+}
